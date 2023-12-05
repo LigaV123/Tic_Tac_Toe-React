@@ -1,0 +1,12 @@
+ul {
+  padding-inline-start: 20px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
