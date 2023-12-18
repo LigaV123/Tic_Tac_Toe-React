@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import Board from './Board'
-import './styles/Board.css'
+import './styles/Game.css'
 import SquareType from '../types/squareType';
 
 const Game = () => {
@@ -20,12 +20,12 @@ const Game = () => {
     setCurrentMove(nextMove);
   }
 
-  const moves = history.map((square, move) => {
+  const moves = history.map((_, move) => {
     let description: string = move > 0 ? 'Go to move #' + move : 'Go to game start';
 
     return (
       <li key={move}>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        <button className='moves-style' onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
   })
@@ -33,7 +33,7 @@ const Game = () => {
   return (
     <div className='game'>
       <div className='game-board'>
-        <div>You are at move #{currentMove}</div>
+        <h1 className='text'>You are at move <span className='move-number'>#{currentMove}</span></h1>
         <Board xIsNext={xIsNext} square={currentSquares} onPlay={handlePlay}/>
       </div>
       <div className='game-info'>

@@ -18,6 +18,7 @@ const calculateWinner = (squares : SquareType[]) => {
       return squares[a];
     }
   }
+  
   return null;
 }
 

@@ -2,6 +2,10 @@ ul {
   padding-inline-start: 20px;
 }
 
+li {
+  list-style-type: none;
+}
+
 .game {
   display: flex;
   flex-direction: row;
@@ -9,4 +13,27 @@ ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.moves-style {
+  background-color: #4a6767;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  border: none;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+
+.moves-style:hover {
+  background-color: #73a09f;
+}
+
+.text {
+  font-size: 25px;
+}
+
+.move-number {
+  color: #5f9a9a;
 }
