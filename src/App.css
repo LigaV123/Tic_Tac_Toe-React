@@ -6,4 +6,16 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  padding: 50px;
+  background-color: lightblue;
+  width: 600px;
+  height: 570px;
+  border-radius: 10px;
 }

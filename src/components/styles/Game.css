@@ -4,6 +4,7 @@ ul {
 
 li {
   list-style-type: none;
+  padding-right: 35px;
 }
 
 .game {
@@ -11,8 +12,22 @@ li {
   flex-direction: row;
 }
 
+.game-board {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .game-info {
-  margin-left: 20px;
+  margin-left: 50px;
+  background-color: rgba(147, 182, 194, 0.841);
+  border-radius: 0px 10px 10px 0px;
+  position: absolute;
+  top: 20px;
+  right: 548.9px;
+  height: 570px;
+  padding-top: 50px;
 }
 
 .moves-style {
@@ -35,5 +50,5 @@ li {
 }
 
 .move-number {
-  color: #5f9a9a;
+  color: #3b6161;
 }

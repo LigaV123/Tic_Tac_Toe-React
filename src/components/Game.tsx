@@ -11,7 +11,7 @@ const Game = () => {
   const currentSquares = history[currentMove];
 
   const handlePlay = (nextSquares: SquareType[]) => {
-    const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
+    const nextHistory: SquareType[][] = [...history.slice(0, currentMove + 1), nextSquares];
     setHistory(nextHistory);
     setCurrentMove(nextHistory.length - 1);
   }
@@ -30,6 +30,11 @@ const Game = () => {
     );
   })
 
+  // const ascDescMoves = () => {
+  //   const changeOrder = [...history].reverse();
+  //   setHistory(changeOrder);
+  // }
+
   return (
     <div className='game'>
       <div className='game-board'>
@@ -40,6 +45,7 @@ const Game = () => {
         <ol>
           {moves}
         </ol>
+        {/*<button onClick={ascDescMoves}>Asccending/Descending</button>*/}
       </div>
     </div>
   )
